@@ -1,0 +1,149 @@
+
+/* Frontend Mentor | FAQ Accordion Card */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image:linear-gradient(hsl(237, 12%, 33%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    width: 70%;
+    background-color: #fff;
+    margin: 6% auto;
+    padding: 5%  ;
+    border-radius: 1rem;
+    justify-content: center;
+    vertical-align: middle;
+}
+.image-desktop{
+  width: 50%;
+  display: block;
+}
+.image-mobile{
+  display: none;
+}
+.inner-img-desktop{
+  position: relative;
+  z-index: 1;
+  margin-left: -35%;
+}
+.desktop-bg-img{
+  position: absolute;
+    width: 85%;
+    z-index: 0;
+    right: 50%;
+    bottom: -25%;
+}
+@media screen and (max-width:1130px) {
+  .desktop-bg-img {
+    position: absolute;
+    width: 80%;
+    z-index: 0;
+    right: 50%;
+    bottom: 42%;
+}
+}
+.box {
+  position: absolute;
+  left: auto;
+  margin: 9% 0% auto -13%;
+  z-index: 3;
+  }
+.faq{
+    width: 100%;
+    margin: auto auto auto 5%;
+} 
+h1{
+    font-weight: 700;
+}
+
+.text{
+    font-size: 12px;
+    font-weight: 400;
+    color:hsl(237, 12%, 33%);
+    padding: 1rem 0;
+    border-bottom: 1px solid  hsl(240 8.1% 75.31%);
+}
+.ans{
+    padding: 0.5rem 0 0 0;
+    color: hsl(240, 5%, 91%) ;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.text>.ans {
+    display: none;
+}
+  .question:hover{
+    color:hsl(14, 87%, 66%) ;
+  }
+  .active > .ans {
+    display: block;
+    /* padding-bottom: 1.3rem; */
+    color:  hsl(237, 12%, 33%);
+  }
+  .active .arrow {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+  }
+
+.active .accordion {
+    font-weight: 700;
+  }
+  
+.question img {
+    align-self: center;
+  }
+  
+@media screen and (max-width:720px) {
+    .container{
+        display: block;
+        width: 90%;
+        margin: 45% auto;
+        padding-bottom: 3rem;
+    }
+    .image-desktop{
+      display: none;
+    }
+    .image-mobile{
+      display: block;
+      width: inherit;
+    }
+    .faq{
+      width: 100%;
+      margin: auto;
+    }
+    h1{
+      text-align: center;
+    }
+    .inner-img-mobile{
+      width: 70%;
+      position:absolute;
+      top: 6%;
+      left: 14%;
+    }
+    .mobile-bg-img{
+      width: 90%;
+      position: relative;
+      margin: -1% auto auto 9%;
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: #fff; 
+}
