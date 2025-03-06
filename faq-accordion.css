@@ -10,7 +10,7 @@
     padding: 0%;
 }
 body{
-    background-image:linear-gradient(hsl(237, 12%, 33%), hsl(240, 73%, 65%));
+    background-image:linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
